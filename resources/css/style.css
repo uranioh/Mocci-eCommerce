@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
 
     color: white;
@@ -60,11 +60,11 @@ div.server > h2 > img {
 
 /* server list square thing crap */
 #serverList {
-    margin: 10vh;
+    margin: 5vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #serverList > .server {
@@ -74,4 +74,29 @@ div.server > h2 > img {
     border-radius: 10px;
     /* new box shadow outside the div */
     box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+}
+
+
+/* footer */
+
+footer {
+    background:rgb(36, 36, 36);
+
+    display: flex;
+    justify-content: center;
+
+    gap: 5em;
+
+
+    padding: 2em 0;
+}
+
+footer > .footerDiv > h2 {
+    margin: 0;
+}
+
+footer > .footerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
 }
