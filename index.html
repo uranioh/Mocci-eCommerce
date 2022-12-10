@@ -4,85 +4,141 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="resources/css/style.css">
-        <title>Document</title>
+
+
+        <link rel="stylesheet" href="resources/css/style-global.css">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="resources/css/style-desktop.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="resources/css/style-mobile.css">
+
+        <script src="resources/js/script.js" defer></script>
+        <script src="https://kit.fontawesome.com/b4ad05c0d4.js" crossorigin="anonymous"></script>
+
+        <title>Hosting</title>
     </head>
     <body>
         <header>
-            <img src="resources/images/logo.png" alt="logo">
-            <nav>
-                <a href="#">Cloud</a>
-                <a href="#">Storage</a>
-                <a href="#">Dedicati</a>
-                <a href="#">Web</a>
-                <a href="#">Servizi</a>
-                <a href="#">Login</a>
-            </nav>
+            <div class="content">
+                <img src="resources/images/logo.png" alt="logo">
+
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <nav id="navigationBar">
+                        <a href="#">Cloud</a>
+                        <a href="#">Storage</a>
+                        <a href="#">Dedicati</a>
+                        <a href="#">Web</a>
+                        <a href="#">Servizi</a>
+                        <a href="#">Login</a>
+                    </nav>
+                </div>  
+            </div>
         </header>
         
         <main>
             <div id="landingDiv">
-                <div id="text">
-                    <h1>Soluzioni server per tutti</h1>
-                    <p>A partire da €1.99 al mese</p>
+                <div class="content">
+                    <div id="text">
+                        <h1>Soluzioni server,</h1>
+                        <h1>per tutti.</h1>
+                        <p>A partire da €1.99 al mese</p>
+                    </div>
+                    <img src="resources/images/server.webp" alt="server">
                 </div>
-                <img src="resources/images/server.webp" alt="server">
+                
             </div>
 
             <div id="serverList">
-                <div class="server">
-                    <img src="resources/images/server1.webp" alt="server1">
-                    <h2>Cloud <img src="resources/images/arrow-right-solid.svg"></h2>
-                    <p>A partire da €3.99 al mese</p>
+                <div class="content">
+                    <div class="server">
+                        <img src="resources/images/server1.webp" alt="server1">
+                        <h2>Cloud <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p>A partire da €3.99 al mese</p>
+                    </div>
+                    <div class="server">
+                        <img src="resources/images/server2.webp" alt="server2">
+                        <h2>Storage <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p>A partire da €2.99 al mese</p>
+                    </div>
+                    <div class="server">
+                        <img src="resources/images/server3.webp" alt="server3">
+                        <h2>Dedicati <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p>A partire da €12.99 al mese</p>
+                    </div>
+                    <div class="server">
+                        <img src="resources/images/server4.webp" alt="server4">
+                        <h2>Web <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p>A partire da €1.99 al mese</p>
+                    </div>
                 </div>
-                <div class="server">
-                    <img src="resources/images/server2.webp" alt="server2">
-                    <h2>Storage <img src="resources/images/arrow-right-solid.svg"></h2>
-                    <p>A partire da €2.99 al mese</p>
-                </div>
-                <div class="server">
-                    <img src="resources/images/server3.webp" alt="server3">
-                    <h2>Dedicati <img src="resources/images/arrow-right-solid.svg"></h2>
-                    <p>A partire da €12.99 al mese</p>
-                </div>
-                <div class="server">
-                    <img src="resources/images/server4.webp" alt="server4">
-                    <h2>Web <img src="resources/images/arrow-right-solid.svg"></h2>
-                    <p>A partire da €1.99 al mese</p>
-                </div>
+            </div>
 
+            <div id="whyus">
+                <div class="content">
+                    <h1>Perché scegliere noi?</h1>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Assistenza tecnica 24/7</li>
+                        <li><i class="fa-solid fa-check"></i>Datacenter veloci a Cagliari e Milano</li>
+                        <li><i class="fa-solid fa-check"></i>Protezione DDoS e hacking inclusa</li>
+                        <li><i class="fa-solid fa-check"></i>Servizio di backup gratuito incluso</li>
+                        <li><i class="fa-solid fa-check"></i>Soddisfati o rimborsati: 30 giorni per cambiare idea</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="form">
+                <div class="content">
+                    <div id="text">
+                        <h1>Contattaci</h1>
+                        <p>Compila il form per ricevere un preventivo personalizzato</p>
+                    </div>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Nome">
+                            <input type="text" placeholder="Cognome">
+                        </div>
+                        
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Richiesta">
+                        <input type="submit" value="Invia">
+                    </form>
+                </div>
             </div>
         </main>
 
         <footer>
-            <div class="footerDiv">
-                <h2>Cloud</h2>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
+            <div class="content">
+                <div class="footerDiv">
+                    <h2>Cloud</h2>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                </div>
+                <div class="footerDiv">
+                    <h2>Cloud</h2>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                </div>
+                <div class="footerDiv">
+                    <h2>Cloud</h2>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                </div>
+                <div class="footerDiv">
+                    <h2>Cloud</h2>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                    <a href="#">Cloud</a>
+                </div>
             </div>
-            <div class="footerDiv">
-                <h2>Cloud</h2>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-            </div>
-            <div class="footerDiv">
-                <h2>Cloud</h2>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-            </div>
-            <div class="footerDiv">
-                <h2>Cloud</h2>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-                <a href="#">Cloud</a>
-            </div>
+            
         </footer>
     </body>
 </html>

@@ -1,0 +1,162 @@
+header > .content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+}
+
+header > .content > div > nav {
+    display: none;
+    flex-direction: column;
+}
+
+header > .content > div > nav > a,
+header > .content > div > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: right;
+}
+
+header > .content > div > nav > a:nth-child(6) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    outline: white solid 2px;
+    border-radius: 5px;
+}
+
+/* main landing page div */
+.content {
+    max-width: 90%;
+    margin: auto;
+}
+
+
+#landingDiv {
+    min-height: 75vh;
+    display: flex;
+    background: linear-gradient(195deg, rgba(137,86,171,1) 0%, rgba(51,60,110,1) 50%, rgba(0,0,0,1) 100%); 
+    
+}
+
+#landingDiv > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#landingDiv > .content > #text > h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#landingDiv > .content > #text > p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#landingDiv > .content > img {
+    width: 100%;
+    order: 1;
+}
+
+#landingDiv > .content > #text {
+    order: 2;
+}
+
+/* server list square thing crap */
+#serverList {
+    margin: 5vh 0;
+}
+
+#serverList > .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vh;
+}
+
+#serverList > .content > .server {
+    padding: 20px;
+    background: #3a3a3a;
+    border: 2px solid #3e3e3e;
+    border-radius: 10px;
+    /* new box shadow outside the div */
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+
+    width: 100%;
+    margin: auto;
+}
+
+/* whyus */
+/* change style of an unordered list */
+#whyus > .content > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#whyus > .content > ul > li > img {
+    filter: invert(100%);
+}
+#whyus > .content > ul > li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* form */
+#form {
+    padding-bottom: 50px;
+}
+
+#form > .content > form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+#form > .content > form > input,
+#form > .content > form > div > input {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: white solid 2px;
+
+    background: transparent;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#form > .content > form > div {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+
+#form > .content > form > input[type="submit"] {
+    width: 25%;
+    color: rgb(120, 255, 145);
+
+
+    font-size: large;
+    font-weight: bold;
+    outline: rgb(120, 255, 145) solid 2px;
+    cursor: pointer;
+}
+
+#form > .content > form > input[type="submit"]:hover {
+    background: rgb(120, 255, 145);
+    color: #202020;
+    transition: .5s;
+}
