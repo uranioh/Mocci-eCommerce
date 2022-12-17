@@ -3,10 +3,19 @@
 body {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
+    line-height: 2;
     margin: 0;
 
     color: white;
     background: #202020;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
 }
 
 header {
@@ -27,6 +36,95 @@ header > .content > div > nav {
     align-items: center;
 }
 
+#landingDiv > div:nth-child(1) > div:nth-child(1) > h1:nth-child(1) {
+    line-height: 1.2;
+}
+
+/* server list */
+#serverList {
+    margin: 5vh 0;
+}
+
+#serverList > .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#serverList > .content > .server {
+    padding: 20px;
+    background: #3a3a3a;
+    border: 2px solid #3e3e3e;
+    border-radius: 10px;
+    /* new box shadow outside the div */
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+
+    transition: .3s;
+}
+
+#serverList > .content:hover > :not(:hover) {
+    opacity: .4;
+}
+
+/* whyus */
+#whyus > .content > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#whyus > .content > ul > li > img {
+    filter: invert(100%);
+}
+#whyus > .content > ul > li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* form */
+#form {
+    padding-bottom: 50px;
+}
+
+#form > .content > form > input,
+#form > .content > form > div > input {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: white solid 2px;
+
+    background: transparent;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#form > .content > form > div {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+
+#form > .content > form > input[type="submit"] {
+    width: 25%;
+    color: rgb(120, 255, 145);
+
+
+    font-size: large;
+    font-weight: bold;
+    outline: rgb(120, 255, 145) solid 2px;
+    cursor: pointer;
+}
+
+#form > .content > form > input[type="submit"]:hover {
+    background: rgb(120, 255, 145);
+    color: #202020;
+    transition: .5s;
+}
+
 
 /* footer */
 footer {
@@ -41,6 +139,11 @@ footer > .content {
 
 footer > .content > .footerDiv > h2 {
     margin: 0;
+}
+
+footer > .content > .footerDiv > a {
+    text-decoration: none;
+    color: white;
 }
 
 footer > .content > .footerDiv {

@@ -31,16 +31,16 @@ header > .content > div > nav > a:nth-child(6) {
 #landingDiv {
     display: flex;
 
-    height: 600px;
+    height: 80vh;
     background: linear-gradient(195deg, rgba(137,86,171,1) 0%, rgba(51,60,110,1) 50%, rgba(0,0,0,1) 100%); 
     
 }
 
 #landingDiv > .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     width: 75%;
 }
 
@@ -62,4 +62,15 @@ header > .content > div > nav > a:nth-child(6) {
     display: flex;
     flex-flow: column wrap;
     gap: 20px;
+}
+
+#form > .content > form > input[type="submit"] {
+    width: 50%;
+}
+
+
+/* footer */
+footer > .content {
+    flex-direction: column;
+    gap: 5vh;
 }
